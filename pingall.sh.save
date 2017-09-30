@@ -1,0 +1,10 @@
+
+
+
+
+NOW=$(date+"%F-%T");
+LOGFILE="PING-$NOW.txt";
+/home/crl/bash/ping.sh >> /home/crl/bash/$LOGFILE;
+NOW=$(date +"%F-%T"); 
+LOGFILE="PINGALL-$NOW.txt"; 
+/home/cwc/bash/ping.sh >> /home/cwc/bash/$LOGFILE;
